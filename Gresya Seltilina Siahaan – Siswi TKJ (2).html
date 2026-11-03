@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gresya Seltilina Siahaan – Siswi TKJ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fde7ef;--surface:#fff4f8;--ink:#4a1a2c;--muted:#85475f;--line:#f3bfd2;
+  --signal:#d6336c;--cable:#ad1457;--hero:#f9bdd1;--hero-ink:#4a1a2c;--deep:#7a1f45;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cable);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hero);color:var(--hero-ink);display:flex;gap:4px;padding:10px 16px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;padding:6px 12px;border-radius:6px;font-size:15px;font-weight:600}
+nav a:hover{background:rgba(255,255,255,.55)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:30}
+.hero{background:var(--hero);color:var(--hero-ink);padding:56px 20px 64px}
+.wrap{max-width:1040px;margin:0 auto}
+.hero .wrap{display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+.host{font-family:ui-monospace,Consolas,monospace;font-size:14px;color:var(--cable);margin:0 0 14px}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;letter-spacing:-.02em}
+.hero p.role{font-size:1.25rem;margin:16px 0 10px;color:#7a1f45}
+.hero p.intro{max-width:52ch;color:#5c2840;margin:0 0 24px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid #d6336c;background:rgba(255,255,255,.55);border-radius:999px;padding:3px 14px;font-size:15px}
+svg.topo{width:100%;height:auto;max-width:420px;justify-self:center}
+.link{stroke:#d6336c;stroke-width:2;fill:none;stroke-dasharray:6 6;animation:flow 1.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+@media (prefers-reduced-motion:reduce){.link{animation:none}}
+section{padding:56px 20px}
+section h2{font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:8px;padding-left:14px;border-left:6px solid var(--cable)}
+.lead{color:var(--muted);margin:0 0 28px;padding-left:20px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px}
+.box h3{font-size:1.2rem;margin-bottom:4px}
+.meta{color:var(--muted);font-size:15px;margin:0 0 10px}
+.box ul{margin:8px 0 0;padding-left:20px}
+.box li{margin:4px 0}
+.timeline{border-left:3px solid var(--signal);margin-left:8px;padding-left:24px;display:grid;gap:22px}
+.timeline .box{position:relative}
+.timeline .box::before{content:"";position:absolute;left:-35px;top:26px;width:15px;height:15px;border-radius:50%;background:var(--surface);border:4px solid var(--signal)}
+.skill{margin:0 0 16px}
+.skill div{display:flex;justify-content:space-between;font-weight:600;font-size:16px}
+meter{width:100%;height:10px;border:0;margin-top:4px}
+meter::-webkit-meter-bar{background:var(--line);border-radius:5px;border:0;height:10px}
+meter::-webkit-meter-optimum-value{background:var(--signal);border-radius:5px}
+meter::-moz-meter-bar{background:var(--signal);border-radius:5px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0}
+.kv dt{font-weight:600;color:var(--muted)}.kv dd{margin:0}
+.note{font-size:14px;color:var(--muted);margin-top:24px}
+footer{background:var(--deep);color:#ffeaf2;padding:28px 20px;text-align:center;font-size:15px}
+@media (max-width:780px){.hero .wrap{grid-template-columns:1fr}svg.topo{max-width:300px}}
+</style>
+</head>
+<body>
+<nav aria-label="Navigasi">
+  <a href="#profil">Profil</a><a href="#pendidikan">Pendidikan</a><a href="#keahlian">Keahlian</a>
+  <a href="#pengalaman">Pengalaman</a><a href="#proyek">Proyek</a><a href="#sertifikat">Sertifikat</a><a href="#kontak">Kontak</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="host">gresya@tkj:~$ whoami</p>
+      <h1>Gresya Seltilina Siahaan</h1>
+      <p class="role">Teknik Komputer dan Jaringan (TKJ)</p>
+      <p class="intro">Siswi TKJ yang terbiasa merakit jaringan dari nol: menarik kabel, mengatur IP, mengonfigurasi router, hingga memastikan semua perangkat saling terhubung dan aman.</p>
+      <ul class="chips"><li>Jaringan LAN/WAN</li><li>MikroTik</li><li>Linux Server</li><li>Troubleshooting</li></ul>
+    </div>
+    <svg class="topo" viewBox="0 0 400 320" role="img" aria-label="Ilustrasi topologi jaringan: router di tengah terhubung ke server, laptop, access point, dan printer">
+      <g class="link"><path d="M200 160 L70 70"/><path d="M200 160 L330 70"/><path d="M200 160 L70 250"/><path d="M200 160 L330 250"/></g>
+      <g fill="#fff4f8" stroke="#d6336c" stroke-width="2">
+        <circle cx="200" cy="160" r="40" fill="#d6336c" stroke="#ad1457"/>
+        <rect x="42" y="46" width="56" height="48" rx="8"/><rect x="302" y="46" width="56" height="48" rx="8"/>
+        <rect x="42" y="226" width="56" height="48" rx="8"/><rect x="302" y="226" width="56" height="48" rx="8"/>
+      </g>
+      <g fill="#4a1a2c" font-family="ui-monospace,Consolas,monospace" font-size="13" text-anchor="middle">
+        <text x="200" y="165" fill="#fff" font-weight="700">Router</text>
+        <text x="70" y="75">Server</text><text x="330" y="75">Laptop</text><text x="70" y="255">AP</text><text x="330" y="255">Printer</text>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<section id="profil"><div class="wrap">
+  <h2>Profil</h2>
+  <p class="lead">Ringkasan singkat tentang saya.</p>
+  <div class="grid">
+    <div class="box">
+      <p style="margin-top:0">Saya Gresya Seltilina Siahaan, pelajar jurusan Teknik Komputer dan Jaringan. Saya menyukai pekerjaan yang membuat sistem berjalan rapi di balik layar: dari perakitan komputer, instalasi jaringan, sampai pengelolaan server. Saya teliti saat mendokumentasikan konfigurasi dan sabar saat mencari sumber masalah jaringan.</p>
+      <p style="margin-bottom:0">Saya ingin berkembang sebagai teknisi jaringan atau network administrator yang andal dan terus belajar teknologi baru.</p>
+    </div>
+    <div class="box">
+      <h3>Data diri</h3>
+      <dl class="kv">
+        <dt>Nama</dt><dd>Gresya Seltilina Siahaan</dd>
+        <dt>Jurusan</dt><dd>Teknik Komputer dan Jaringan</dd>
+        <dt>Bahasa</dt><dd>Indonesia, Inggris (dasar)</dd>
+        <dt>Minat</dt><dd>Jaringan, keamanan dasar, server</dd>
+        <dt>Hobi</dt><dd>Membaca, desain sederhana, merakit perangkat</dd>
+        <dt>Motto</dt><dd>Terhubung, rapi, dan terus belajar</dd>
+      </dl>
+    </div>
+  </div>
+</div></section>
+
+<section id="pendidikan" style="background:var(--surface)"><div class="wrap">
+  <h2>Pendidikan</h2>
+  <p class="lead">Riwayat belajar formal dan mata pelajaran inti.</p>
+  <div class="timeline">
+    <div class="box">
+      <h3>SMK, Teknik Komputer dan Jaringan</h3>
+      <p class="meta">Nama sekolah dan tahun: isi sesuai data Anda</p>
+      <ul>
+        <li>Administrasi Infrastruktur Jaringan (AIJ) dan Administrasi Sistem Jaringan (ASJ)</li>
+        <li>Teknologi Layanan Jaringan (TLJ) dan Teknologi Jaringan Berbasis Luas (WAN)</li>
+        <li>Sistem Komputer dan Dasar Desain Grafis</li>
+        <li>Produk Kreatif dan Kewirausahaan</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="keahlian"><div class="wrap">
+  <h2>Keahlian</h2>
+  <p class="lead">Kemampuan teknis dan non-teknis.</p>
+  <div class="grid">
+    <div class="box">
+      <h3>Keahlian teknis</h3>
+      <div class="skill"><div><span>Instalasi &amp; konfigurasi jaringan LAN</span><span>90%</span></div><meter min="0" max="100" value="90" aria-label="90 persen"></meter></div>
+      <div class="skill"><div><span>Subnetting &amp; pengalamatan IP</span><span>85%</span></div><meter min="0" max="100" value="85" aria-label="85 persen"></meter></div>
+      <div class="skill"><div><span>MikroTik (router, DHCP, firewall)</span><span>80%</span></div><meter min="0" max="100" value="80" aria-label="80 persen"></meter></div>
+      <div class="skill"><div><span>Cisco Packet Tracer</span><span>80%</span></div><meter min="0" max="100" value="80" aria-label="80 persen"></meter></div>
+      <div class="skill"><div><span>Linux server (Debian)</span><span>75%</span></div><meter min="0" max="100" value="75" aria-label="75 persen"></meter></div>
+      <div class="skill"><div><span>Perakitan &amp; perbaikan komputer</span><span>90%</span></div><meter min="0" max="100" value="90" aria-label="90 persen"></meter></div>
+      <div class="skill" style="margin-bottom:0"><div><span>Kabel UTP &amp; dasar fiber optik</span><span>85%</span></div><meter min="0" max="100" value="85" aria-label="85 persen"></meter></div>
+    </div>
+    <div class="box">
+      <h3>Layanan jaringan yang dikuasai</h3>
+      <ul>
+        <li>DHCP, DNS, dan web server</li>
+        <li>VLAN dan routing statis</li>
+        <li>Hotspot dan manajemen bandwidth</li>
+        <li>Proxy dan firewall dasar</li>
+        <li>Wireless access point dan jaringan nirkabel</li>
+        <li>Monitoring dan troubleshooting jaringan</li>
+      </ul>
+      <h3 style="margin-top:20px">Keahlian pendukung</h3>
+      <ul>
+        <li>Microsoft Word, Excel, PowerPoint</li>
+        <li>Dokumentasi teknis dan laporan</li>
+        <li>Kerja sama tim dan komunikasi</li>
+        <li>Disiplin, teliti, dan cepat belajar</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="pengalaman" style="background:var(--surface)"><div class="wrap">
+  <h2>Pengalaman</h2>
+  <p class="lead">Praktik kerja dan kegiatan organisasi.</p>
+  <div class="timeline">
+    <div class="box">
+      <h3>Praktik Kerja Lapangan (PKL), Teknisi Jaringan</h3>
+      <p class="meta">Nama perusahaan dan periode: isi sesuai data Anda</p>
+      <ul>
+        <li>Membantu instalasi dan perapian kabel jaringan di kantor</li>
+        <li>Mengonfigurasi router dan access point untuk pengguna baru</li>
+        <li>Mendiagnosis koneksi lambat dan perangkat yang terputus</li>
+        <li>Membuat dokumentasi topologi dan daftar alamat IP</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Kegiatan sekolah dan organisasi</h3>
+      <p class="meta">Isi sesuai data Anda</p>
+      <ul>
+        <li>Asisten laboratorium komputer: merawat dan menyiapkan perangkat praktik</li>
+        <li>Anggota kegiatan ekstrakurikuler bidang teknologi</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="proyek"><div class="wrap">
+  <h2>Proyek</h2>
+  <p class="lead">Karya praktik yang pernah dikerjakan.</p>
+  <div class="grid">
+    <div class="box"><h3>Jaringan LAN sekolah</h3><p class="meta">Cisco Packet Tracer</p><p style="margin:0">Merancang topologi bintang dengan beberapa VLAN dan routing antar-VLAN untuk laboratorium dan ruang guru.</p></div>
+    <div class="box"><h3>Hotspot dengan MikroTik</h3><p class="meta">MikroTik RouterOS</p><p style="margin:0">Menyiapkan hotspot berbatas bandwidth, halaman login, dan pembagian IP otomatis lewat DHCP.</p></div>
+    <div class="box"><h3>Server web Debian</h3><p class="meta">Linux, Apache, BIND9</p><p style="margin:0">Membangun server web dan DNS lokal sehingga situs internal bisa dibuka dengan nama domain.</p></div>
+  </div>
+</div></section>
+
+<section id="sertifikat" style="background:var(--surface)"><div class="wrap">
+  <h2>Sertifikat</h2>
+  <p class="lead">Pelatihan dan pengakuan kompetensi.</p>
+  <div class="grid">
+    <div class="box"><h3>Uji Kompetensi Keahlian (UKK) TKJ</h3><p class="meta">Tahun: isi sesuai data Anda</p></div>
+    <div class="box"><h3>Pelatihan MikroTik Certified Network Associate</h3><p class="meta">Penyelenggara dan tahun: isi sesuai data Anda</p></div>
+    <div class="box"><h3>Sertifikat PKL</h3><p class="meta">Perusahaan dan tahun: isi sesuai data Anda</p></div>
+  </div>
+</div></section>
+
+<section id="kontak"><div class="wrap">
+  <h2>Kontak</h2>
+  <p class="lead">Terbuka untuk magang, PKL, dan peluang kerja di bidang jaringan.</p>
+  <div class="box">
+    <dl class="kv">
+      <dt>Email</dt><dd>isi email Anda</dd>
+      <dt>Telepon / WhatsApp</dt><dd>isi nomor Anda</dd>
+      <dt>Alamat</dt><dd>isi kota atau alamat Anda</dd>
+      <dt>LinkedIn</dt><dd>isi tautan profil Anda</dd>
+    </dl>
+  </div>
+  <p class="note">Catatan: bagian yang bertuliskan “isi sesuai data Anda” adalah tempat data pribadi. Ganti dengan informasi yang sebenarnya.</p>
+</div></section>
+
+<footer>© 2026 Gresya Seltilina Siahaan · CV Teknik Komputer dan Jaringan</footer>
+</body>
+</html>
